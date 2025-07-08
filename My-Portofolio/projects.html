@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Professional Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="js/main.js" type="module" defer></script>
+  <script src="js/projects.js" type="module" defer></script>
+</head>
+<body class="light-mode">
+  <div class="tech-background"></div>
+  <header>
+    <nav>
+      <div class="logo">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="2"/>
+          <text x="50" y="65" text-anchor="middle" fill="var(--text)" font-size="40">P</text>
+        </svg>
+      </div>
+      
+      <button class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="mobile-overlay"></div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch" class="switch">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <main class="projects-page">
+    <section class="projects-hero">
+      <h1>My Projects</h1>
+      <p>Explore my portfolio of web, mobile, and backend projects</p>
+    </section>
+
+    <section class="projects-filters">
+      <div class="search-bar">
+        <input type="text" id="project-search" placeholder="Search projects...">
+        <i class="fas fa-search"></i>
+      </div>
+      
+      <div class="filter-options">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+      </div>
+
+      <div class="sort-options">
+        <select id="sort-projects">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+          <option value="az">A-Z</option>
+          <option value="za">Z-A</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="projects-grid-container">
+      <div class="project-grid">
+        <!-- Projects will be dynamically inserted here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Stay Updated</h3>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit" class="btn primary">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-section">
+        <h3>Connect</h3>
+        <div class="social-icons">
+          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 Professional Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

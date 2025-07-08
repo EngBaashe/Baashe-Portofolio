@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Professional Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="js/main.js" type="" defer></script>
+  <script src="js/about.js" type="" defer></script>
+</head>
+<body class="light-mode">
+  <div class="tech-background"></div>
+  <header>
+    <nav>
+      <div class="logo">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" fill="none" stroke="var(--accent)" stroke-width="2"/>
+          <text x="50" y="65" text-anchor="middle" fill="var(--text)" font-size="40">P</text>
+        </svg>
+      </div>
+      
+      <button class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="mobile-overlay"></div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch" class="switch">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <main class="about-page">
+    <section class="about-hero">
+      <div class="about-hero-content">
+        <div class="profile-image">
+          <div class="profile-frame"></div>
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <mask id="circleMask">
+                <circle cx="100" cy="100" r="90" fill="white"/>
+              </mask>
+            </defs>
+            <circle cx="100" cy="100" r="90" fill="var(--accent-light)"/>
+            <circle cx="100" cy="70" r="35" fill="var(--text)" mask="url(#circleMask)"/>
+            <path d="M100 120 Q100 180 160 180 L40 180 Q100 180 100 120" fill="var(--text)" mask="url(#circleMask)"/>
+          </svg>
+        </div>
+        <div class="about-intro">
+          <h1>About Me</h1>
+          <h2>Full Stack Developer & Problem Solver</h2>
+          <p>With over 5 years of experience in web development, I specialize in creating elegant solutions to complex problems. My passion lies in building scalable applications and mentoring fellow developers.</p>
+          <div class="quick-stats">
+            <div class="stat-item">
+              <i class="fas fa-code"></i>
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-coffee"></i>
+              <span class="stat-number">1000+</span>
+              <span class="stat-label">Coffee Cups</span>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-clock"></i>
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey-section">
+      <h2>My Journey</h2>
+      <div class="journey-timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Senior Developer</h3>
+            <span class="timeline-date">2023 - Present</span>
+            <p>Leading development teams and architecting scalable solutions at Tech Corp.</p>
+            <div class="achievement-tags">
+              <span>Team Leadership</span>
+              <span>System Architecture</span>
+              <span>Agile Development</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Full Stack Developer</h3>
+            <span class="timeline-date">2021 - 2023</span>
+            <p>Developed and maintained complex web applications at StartUp Inc.</p>
+            <div class="achievement-tags">
+              <span>Full Stack Development</span>
+              <span>API Design</span>
+              <span>Database Optimization</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Junior Developer</h3>
+            <span class="timeline-date">2019 - 2021</span>
+            <p>Started my journey in web development, focusing on front-end technologies.</p>
+            <div class="achievement-tags">
+              <span>Frontend Development</span>
+              <span>UI/UX Design</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Frontend Development</h3>
+          <div class="skill-grid">
+            <div class="skill-item" data-skill="95">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </div>
+            <div class="skill-item" data-skill="90">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </div>
+            <div class="skill-item" data-skill="85">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </div>
+            <div class="skill-item" data-skill="80">
+              <i class="fab fa-react"></i>
+              <span>React</span>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Backend Development</h3>
+          <div class="skill-grid">
+            <div class="skill-item" data-skill="85">
+              <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </div>
+            <div class="skill-item" data-skill="80">
+              <i class="fab fa-php"></i>
+              <span>PHP</span>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </div>
+            <div class="skill-item" data-skill="75">
+              <i class="fas fa-database"></i>
+              <span>SQL</span>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </div>
+            <div class="skill-item" data-skill="70">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools & Technologies</h3>
+          <div class="skill-grid">
+            <div class="skill-item" data-skill="90">
+              <i class="fab fa-git-alt"></i>
+              <span>Git</span>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </div>
+            <div class="skill-item" data-skill="85">
+              <i class="fab fa-docker"></i>
+              <span>Docker</span>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </div>
+            <div class="skill-item" data-skill="80">
+              <i class="fab fa-aws"></i>
+              <span>AWS</span>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </div>
+            <div class="skill-item" data-skill="75">
+              <i class="fab fa-jenkins"></i>
+              <span>CI/CD</span>
+              <div class="skill-bar"><div class="skill-progress"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education-section">
+      <h2>Education & Certifications</h2>
+      <div class="education-grid">
+        <div class="education-card">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Computer Science</h3>
+          <p class="institution">Tech University</p>
+          <p class="duration">2015 - 2019</p>
+          <p class="description">Bachelor's degree with focus on software engineering and web technologies.</p>
+        </div>
+
+        <div class="education-card">
+          <div class="education-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>AWS Solutions Architect</h3>
+          <p class="institution">Amazon Web Services</p>
+          <p class="duration">2021</p>
+          <p class="description">Professional certification in cloud architecture and AWS services.</p>
+        </div>
+
+        <div class="education-card">
+          <div class="education-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>Full Stack Development</h3>
+          <p class="institution">Tech Academy</p>
+          <p class="duration">2020</p>
+          <p class="description">Advanced certification in modern web development technologies.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="interests-section">
+      <h2>Interests & Hobbies</h2>
+      <div class="interests-grid">
+        <div class="interest-item">
+          <i class="fas fa-book"></i>
+          <h3>Reading</h3>
+          <p>Tech blogs & sci-fi novels</p>
+        </div>
+        <div class="interest-item">
+          <i class="fas fa-hiking"></i>
+          <h3>Hiking</h3>
+          <p>Weekend adventures</p>
+        </div>
+        <div class="interest-item">
+          <i class="fas fa-camera"></i>
+          <h3>Photography</h3>
+          <p>Nature & architecture</p>
+        </div>
+        <div class="interest-item">
+          <i class="fas fa-chess"></i>
+          <h3>Chess</h3>
+          <p>Strategic thinking</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Stay Updated</h3>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Enter your email">
+          <button type="submit" class="btn primary">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-section">
+        <h3>Connect</h3>
+        <div class="social-icons">
+          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 Professional Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

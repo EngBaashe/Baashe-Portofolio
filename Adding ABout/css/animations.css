@@ -1,0 +1,252 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes skillProgress {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--progress);
+  }
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--accent),
+                0 0 10px var(--accent),
+                0 0 15px var(--accent);
+  }
+  50% {
+    box-shadow: 0 0 10px var(--accent),
+                0 0 20px var(--accent),
+                0 0 30px var(--accent);
+  }
+}
+
+@keyframes glowEffect {
+  0% {
+    box-shadow: 0 0 5px var(--accent);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--accent);
+  }
+  100% {
+    box-shadow: 0 0 5px var(--accent);
+  }
+}
+
+@keyframes cardHover {
+  to {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px var(--shadow);
+  }
+}
+
+@keyframes testimonialFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes indicatorPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes carouselSlide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes buttonPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(218, 165, 32, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(218, 165, 32, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(218, 165, 32, 0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes linkSlideIn {
+  from {
+    transform: translateX(-5px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes inputFocusGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(218, 165, 32, 0.2);
+  }
+  70% {
+    box-shadow: 0 0 10px 5px rgba(218, 165, 32, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(218, 165, 32, 0.2);
+  }
+}
+
+.hero-content {
+  animation: slideIn 1s ease-out;
+}
+
+.hero-image {
+  animation: scaleIn 1s ease-out;
+}
+
+.service-card {
+  animation: fadeIn 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+.service-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.service-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.service-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.tech-grid i:hover {
+  animation: glowEffect 1.5s infinite;
+}
+
+.project-card:hover {
+  animation: cardHover 0.3s forwards;
+}
+
+.testimonial-slide.active {
+  animation: testimonialFade 0.5s ease-out forwards;
+}
+
+.indicator.active {
+  animation: indicatorPulse 2s infinite;
+}
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.btn.primary:hover {
+  animation: buttonPulse 1.5s infinite;
+}
+
+.social-icons a:hover {
+  animation: shake 0.3s ease-in-out;
+}
+
+.tech-item {
+  animation: floatCard 3s ease-in-out infinite;
+  animation-delay: calc(var(--delay) * 0.2s);
+}
+
+.tech-item:hover {
+  animation: glowPulse 1.5s infinite;
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.5s ease-out forwards;
+  animation-delay: calc(var(--delay) * 0.3s);
+}
+
+.timeline-item:nth-child(odd) {
+  transform: translateX(50px);
+}
+
+.footer-section ul li a:hover::before {
+  animation: linkSlideIn 0.3s ease forwards;
+}
+
+.subscribe-form input:focus {
+  animation: inputFocusGlow 1.5s infinite;
+}
