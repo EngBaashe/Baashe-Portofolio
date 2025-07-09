@@ -1,4 +1,88 @@
-:root {
+<main>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="accent">John Doe</span></h1>
+      <h2>Full Stack Developer</h2>
+      <p>Crafting digital experiences with passion and precision</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn primary">View My Work</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="profile-pic">
+        <svg viewBox="0 0 200 200">
+          <defs>
+            <mask id="circleMask">
+              <circle cx="100" cy="100" r="90" fill="white"/>
+            </mask>
+          </defs>
+          <circle cx="100" cy="100" r="90" fill="var(--accent-light)"/>
+          <circle cx="100" cy="70" r="35" fill="var(--text)" mask="url(#circleMask)"/>
+          <path d="M100 120 Q100 180 160 180 L40 180 Q100 180 100 120" fill="var(--text)" mask="url(#circleMask)"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <!-- Project cards will be dynamically inserted here -->
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Creating responsive and dynamic web applications</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Mobile Development</h3>
+        <p>Building native and cross-platform mobile apps</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-server"></i>
+        <h3>Backend Solutions</h3>
+        <p>Developing scalable server-side applications</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Background & Skills</h2>
+    <div class="timeline">
+      <!-- Timeline items will be dynamically inserted here -->
+    </div>
+    <div class="tech-stack">
+      <h2>Technologies & Tools</h2>
+      <div class="tech-grid">
+        <!-- Tech stack items will be dynamically inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial-carousel">
+      <!-- Testimonial slides will be dynamically inserted here -->
+    </div>
+    <div class="carousel-indicators">
+      <!-- Indicators will be dynamically inserted here -->
+    </div>
+    <div class="carousel-controls">
+      <button class="prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+</main>
+
+<style>
+  :root {
   --accent: #DAA520;
   --accent-light: #F4D03F;
   --background: #FFFFFF;
@@ -1451,3 +1535,4 @@ textarea.form-control {
     font-size: 0.85rem;
   }
 }
+</style>
